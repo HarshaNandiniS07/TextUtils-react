@@ -113,7 +113,7 @@ export default function TextForm(props) {
     <div className="container my-3">
         {/* my-3 leaves a space of 3 in the y axis */}
     <h1> Your text summary</h1>
-    <p> {text.split(" ").filter((element)=>{return element.length!=0})length} words and {text.length} characters</p>
+    <p> {text.split(" ").filter((element)=>{return element.length!=0}).length} words and {text.length} characters</p>
     {/* {text.split(" ").length} -> gives the number of words, {text.length} -> gives the number of characters that are being , it gives a live update of it as we enter the number of word  */}
 
     <p>{(0.008*text.split(" ").length).toFixed(2)} minutes read </p>
